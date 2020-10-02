@@ -2,5 +2,5 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
-  - init: export DENO_INSTALL="/home/gitpod/.deno"; export PATH="$DENO_INSTALL/bin:$PATH"
+  - init: ''
     command: 'echo "TODO: Replace with command to start project"'
