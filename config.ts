@@ -7,7 +7,7 @@ export default {
       type: "datetime",
       name: "timestamp",
       config: {
-        startingDate: "2020-09-01",
+        startDate: "2020-09-01",
         step: { min: 0, max: 100000 },
       },
     },

@@ -3,12 +3,12 @@ import { getInteger } from "../random/number.ts";
 
 export default function* (
   {
-    startingDate = "2020-01-01",
+    startDate = "2020-01-01",
     step = { min: 0, max: 1000 },
     format = "toISOString",
   } = {},
 ) {
-  const date = new Date(startingDate);
+  const date = new Date(startDate);
 
   while (true) {
     date.setTime(date.getTime() + getInteger(step));
