@@ -11,6 +11,10 @@ export default {
         distribution: "linear",
       },
     },
+    {
+      type: "integer",
+      name: "size",
+    },
     // {
     //   type: "ipv4",
     //   name: "target",
