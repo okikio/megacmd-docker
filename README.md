@@ -90,4 +90,4 @@ Furthermore, the project allowed me to get to know a number of new technologies 
 * [TypeScript](https://www.typescriptlang.org/): I'm still not sure about it, but it leads to a cleaner code, at it didn't allow me to access member methods using brackets. See the `toISOString` format above.
 * [Gitpod](https://www.gitpod.io/): The future of applications is the web, so go for it. Using Gitpod allowed me to change my PC without the need to re-setup my development environment (at least for this project).
 
-Have fun using it. Send me a message on [Twitter](https://twitter.com/fknipp), if you liked it.
+Have fun using this project. Send me a message on [Twitter](https://twitter.com/fknipp), if you like it. PRs are welcome.
