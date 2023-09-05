@@ -31,21 +31,21 @@ Use this container when you want to:
 Open your terminal, navigate to the folder with the Dockerfile, and run:
 
 ```bash
-docker build -t redhat-megacmd .
+docker build -t docker-megacmd .
 ```
 
 ### Run It With Username and Password
 To log in with your MEGA username and password, do this:
 
 ```bash
-docker run -e MEGA_USER='your_username_here' -e MEGA_PASS='your_password_here' redhat-megacmd
+docker run -e MEGA_USER='your_username_here' -e MEGA_PASS='your_password_here' docker-megacmd
 ```
 
 ### Or Use a Session ID
 If you've got a MEGA session ID, you can use that instead:
 
 ```bash
-docker run -e MEGA_SESSION='your_session_id_here' redhat-megacmd
+docker run -e MEGA_SESSION='your_session_id_here' docker-megacmd
 ```
 
 ### Keeping Secrets Safe 🤫
@@ -55,7 +55,7 @@ If you're not using Docker Swarm but still want to keep your secrets, well, secr
 docker run \
   -v /path/to/your/mega_user.txt:/run/secrets/mega_user:ro \
   -v /path/to/your/mega_pass.txt:/run/secrets/mega_pass:ro \
-  redhat-megacmd
+  docker-megacmd
 ```
 
 ### Using Docker Swarm? 🐝
@@ -65,8 +65,8 @@ Create Docker secrets and deploy the service like this:
 echo "your_username" | docker secret create mega_user -
 echo "your_password" | docker secret create mega_pass -
 docker service create \
-  --name redhat-megacmd \
+  --name docker-megacmd \
   --secret mega_user \
   --secret mega_pass \
-  redhat-megacmd:latest
+  docker-megacmd:latest
 ```
